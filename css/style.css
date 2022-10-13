@@ -1,0 +1,23 @@
+body{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color:rgb(166, 114, 214);
+    height: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+   
+}
+img{
+    width: auto;
+    height: 500px;
+    align-items: center;
+}
