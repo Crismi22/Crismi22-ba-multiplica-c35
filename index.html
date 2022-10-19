@@ -8,19 +8,72 @@
     <title>BA Multiplica</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Contacto</a>
-            <a href="#">Perfil</a>
-            <a href="#">Novedades</a>
-        </nav>
-        <h1>Hola Mundo!</h1>
-        <img src="./img/img.jpg" alt="craneo y mariposas">
+    <!----------------------------ENCABEZADO FIJO---------------------->
+  <header class="header">
+    <div class="menu">
+      <nav class="nav-menu">
+        <ul class="lista">
+          <li class="item">
+            <a href="#hola">HOLA</a>
+          </li>
+          <li class="item">
+            <a href="#conocimiento" class="conocimiento">CONOCIMIENTOS</a>
+          </li>
+          <li class="item">
+            <a href="#proyecto" class="proyecto">PROYECTOS</a>
+          </li>
+          <!--boton sin estilo de button-->
+          <li class="item boton-contacto">
+            <a href="#contacto" class="boton-contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section">
+    <h1 class="titulo">Página de prueba</h1>
+    <div class="portada">
+        <img src="./img/img.jpg" class="imagen" alt="craneo y mariposas">
         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus culpa ipsum exercitationem magnam impedit nam officia animi. Ad soluta hic beatae aut maiores facere laudantium qui harum perferendis quibusdam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id ipsum magni accusamus officiis aliquid quaerat quas eligendi dolore, illo quasi voluptate quos asperiores neque? Rerum maxime est velit magnam!
+            Dolorem, obcaecati iste vel eveniet cum porro unde sapiente atque nam natus amet sequi error sint tempore deserunt consequatur nisi libero officiis quia cupiditate in. Quibusdam qui incidunt tempora nostrum?
+            Amet, labore veritatis sint velit iure corporis soluta quam repellat ad nulla officia accusamus libero in maiores vel delectus reprehenderit, exercitationem ex. Minima tenetur quasi deleniti, modi possimus dicta harum.
+            Ipsa atque perferendis nesciunt rerum quia esse perspiciatis labore? Consectetur, ad. Veritatis, quis quam? Veritatis quae corrupti similique nostrum cupiditate assumenda, facilis temporibus, saepe modi, asperiores officia aspernatur et sed!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque debitis excepturi at perferendis facere aut. Nam sapiente qui facere ipsam voluptatibus cum a, aspernatur fugit! Eligendi, repellat nesciunt! Corrupti, enim.
             Dolores velit cupiditate magni culpa sint, earum corrupti molestias a tenetur perferendis alias? Officiis iusto enim nihil expedita! Doloribus esse dolorem eos molestiae recusandae magni unde nihil ipsa quasi reiciendis!
         </p>
-    </header>
+    </div>
+  </section>
+  <section class="form">
+    <div class="formulario">
+        <h1>Escribime</h1>
+        <form action="form">
+          <div class="caja-nombre">
+            <div class="form-nombre">
+              <label for="nombre">Nombre*</label>
+              <input type="text" placeholder="p.ej Cristina" id="name" aria-label="ingrese su nombre">
+            </div>
+            <div class="form-nombre">
+              <label for="apellido">Apellido*</label>
+              <input type="text" placeholder="p.ej.:Perez" name="apellido" id="lastname" aria-label="ingrese su apellido">
+            </div>
+          </div>
+          
+          <div class="form-part">
+            <label for="email">Email*</label>
+            <input type="email"placeholder="micorreo@ejemplo.com" id="email" size="40" aria-label="ingrese su correo">
+            <label for="message">Mensaje*</label>
+            <textarea name="message" id="messege" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+            <button type="submit" class="boton-mensaje">Enviar</button>
+          </div>
+        </form>
+      </div>
+  </section>
+  <footer>
+    <span>Hecho con 💜 por Cristina</span>
+  </footer>
+        
+    <script src="./js/app.js"></script>
 </body>
 </html>

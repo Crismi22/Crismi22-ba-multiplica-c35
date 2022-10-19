@@ -1,23 +1,105 @@
 body{
-    background-color: blueviolet;
+    background-color: #402f50;
     margin: 0;
     padding: 0;
-}
-nav{
-    background-color:rgb(166, 114, 214);
-    height: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    color: #fff;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
-   
+.header{
+    background-color: rgb(224, 174, 240);
+    box-shadow: 1px 5px 5px 0px rgba(126, 63, 209, 0.75);
+    padding: 15px;
+    width: 100%;
+    margin-top: 0;   
 }
-img{
-    width: auto;
-    height: 500px;
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    max-width: 1200px ;
+    
+}
+.lista, a{
+    display: flex;
+    font-size: 15px;
+    color: rgb(45, 45, 45);
+    text-decoration: none;
+    justify-content: space-around;
     align-items: center;
+}
+
+.lista :hover{
+    color: #5c2194;
+    font-weight: 500;
+}
+.item{
+    list-style-type: none;
+    margin:0 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-decoration: none;
+    
+}
+.boton-contacto{
+    font-size: 15px;
+    color: white;
+    background-color: #8d5db9;
+    border-radius:100px;
+    padding: 0 25px;
+    box-sizing: border-box;   
+}
+
+.boton-contacto:hover{
+    color: #fff;
+    background-color:#5c2194;
+}
+
+.titulo{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.portada{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen{
+    width:50%;
+    height: 50%;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    width: 50%;
+    margin-left: 20px;  
+    flex-wrap: wrap;
+}
+
+input, textarea{
+    display: block;
+    border-radius: 20px;
+    background-color:#ecdff0;
+    padding: 10px 15px;
+    border: 1px solid #ecdff0; 
+    width: 100%; 
+    outline: none;
+    transition: .2s;     
+}
+input:focus,textarea:focus{
+    border: 1.5px solid #5c3580;
+    box-shadow: 0px 3px 10px 1px #d0acf1;
+}
+
+footer{
+    background-color: #250a3f;
+    height: 30px;
+    text-align: center;
 }
